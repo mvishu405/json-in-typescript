@@ -38,3 +38,28 @@ let products:Array<any> = [
 products.forEach(product => {
   console.log(product.id, product.name, product.price)
 });
+
+console.log("==========================================");
+
+
+let obj:any = {
+  "login": login()
+};
+
+function login()
+{
+  return "Login module soon........."
+}
+
+console.log(obj.login);
+
+console.log("==========================================");
+
+let obj1:any = {
+  "mysql": () => {return "mysql data soon..."},
+  "mongodb": () => {return "mongodb data soon..."}
+};
+
+console.log(obj1.mysql(), obj1.mongodb());
+
+console.log("=============== End =====================");
